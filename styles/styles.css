@@ -5,6 +5,9 @@ body {
     color: white;
 }
 
+/*
+    1) Mostrar la pantalla dividida en 5 blocs (20% de pantalla)
+*/
 main {    
     display: grid;    
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -22,6 +25,14 @@ p {
     align-items: center;
 }
 
+/*
+Colors:  
+    i) Block 1: #244F75;
+    ii) Block 2: #60BFBF; 
+    iii) Block 3: #8C4B7E;
+    iv) Block 4: #F8BB44; 
+    v) Block 5: #F24B4B;
+*/
 #a {
     background: #244F75;
 }
@@ -42,6 +53,10 @@ p {
     background: #F24B4B;
 }
 
+/*
+Abans d’afegir cada stripe, (:before), afegirem un pla blanc deformat amb una opacitat de 0.1. 
+Utilitzarem la funció: Skew()
+*/
 .strips .strip__content:before {
     content: "";
     position: absolute;
