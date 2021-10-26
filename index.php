@@ -1,37 +1,17 @@
 <?php
-//initialize with a random integer within range
-$diceNumber = mt_rand(1, 6);
+/* 
+    mostrar els fitxers .php del directori actual, convertits en link
+*/
 
-//initialize
-$numText = "";
+    $fitxers = scandir(".");
 
-//calling switch statement
-  switch($diceNumber) 
-  {
-  case 1:
-    $numText = "One";
-    break;
-  case 2:
-    $numText = "Two";
-    break;
-  case 3:
-  case 4:
-    // case 3 and 4 will go to this line
-    $numText = "Three or Four";
-    break;
-  case 5:
-    $numText = "Five";
-    echo $numText;
-    // break; //without specify break or return it will continue execute to next case.
-  case 6:
-    $numText = "Six";
-    echo $numText;
-    break;
-  default:
-    $numText = "unknown";
-  }
-  
-  //display result
-  echo 'Dice show number '.$numText.'.';
+    foreach($fitxers as $value) {
+        //saltar aquest fitxer i els fitxers que escomençen per _
+        if ($value != "index.php" && substr($value, 0, 1) != "_") {
+            if (substr($value, -4) == ".php") {
+                echo '<a href="'.$value.'" target="_blank">'.$value.'</a><br>';
+            }
+        }
+    }
 
 ?>
