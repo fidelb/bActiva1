@@ -15,7 +15,7 @@ https://es.wikipedia.org/wiki/Criba_de_Erat%C3%B3stenes
         for ($i = 2; $i < ($numTope+1); $i++) {            
             $a[$i-2] = $i;
         }
-        print_r($a);
+        // print_r($a);
 
         // https://es.wikipedia.org/wiki/Criba_de_Erat%C3%B3stenes , segundo paso.
         $posInicial = 0;
@@ -37,8 +37,14 @@ https://es.wikipedia.org/wiki/Criba_de_Erat%C3%B3stenes
         return $a;
     }
 
-    echo "<h3>Trobar nombres primers dins d'un interval donat.</h3>";
+    $numDonat = 100;
 
-    print_r(cribaE(20));
+    echo "<h3>Trobar nombres primers dins d'un interval donat (ex: ".$numDonat.") utilitzant la criba d'Eratóstenes</h3>";
+
+    $b = cribaE($numDonat);
+    for ($i = 0; $i < count($b); $i++) {
+        echo $b[$i]."<br>";
+    }
+    
     
 ?>

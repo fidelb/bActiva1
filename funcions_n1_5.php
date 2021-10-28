@@ -27,7 +27,12 @@ Si la nota és menor a 33%, l'estudiant reprovarà.
         return $grau;
     }
 
-    echo "<h3>Escriure una funciò per verificar el grau de un estudiant en d'acord a la nota.</h3>";
+    echo "<h3>Escriure una funciò per verificar el grau de un estudiant en d'acord a la nota.<br>
+    Si la nota és 60% o més, el grau hauria de ser Primera Divisió.<br>
+Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.<br>
+Si la nota està entre 33% to 44%, el grau hauria de ser Tercera Divisió.<br>
+Si la nota és menor a 33%, l'estudiant reprovarà.
+</h3>";
     echo "<p>Introdueix la nota (0 a 100%).</p>";
 
     include "_formulari3.php";

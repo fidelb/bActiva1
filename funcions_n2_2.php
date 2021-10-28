@@ -18,8 +18,8 @@ Cada minut addicional a partir dels 3 primers és un pas de comptador i costa 5 
     }
 
     echo "<h3>Escriu una funció que determini la quantitat total a pagar per una trucada telefònica d'acord 
-    a les següents premisses:    
-    Tota crida que duri menys de 3 minuts té un cost de 10 cèntims.
+    a les següents premisses:<br>   
+    Tota crida que duri menys de 3 minuts té un cost de 10 cèntims.<br>
     Cada minut addicional a partir dels 3 primers és un pas de comptador i costa 5 cèntims.</h3>";
     echo "<p>Introdueix els minuts de la trucada:</P>";
     
