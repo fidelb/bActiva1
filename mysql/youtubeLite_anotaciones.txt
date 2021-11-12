@@ -1,0 +1,21 @@
+la tabla publicaciones podria desaparecer y los campos,
+ser campos añadidos (usuariId i data) a la tabla videos
+como tabla propia parece que se ajusta más a la 
+descripción de lo solicitado.
+
+quizá debería existir otra tabla que relacione los 
+canales con los videos de ese canal, pero no se pide
+ni se deja claro que significa un canal, para alguien
+que no conozca youtube el esquema se quedaría así.
+
+los campos tinyint son en realidad boolean (workbench
+los transforma?) un campo like si es true es un like, si no es true
+es un dislike porque sino no existiria en la tabla.
+
+los campos enum se podrian codificar de otra forma
+según necesidad.
+
+dependiendo de las necesidades se podrian crear más
+índices (ej: un indice para hacer más rápido el cálculo 
+del número de likes de un video)
+
