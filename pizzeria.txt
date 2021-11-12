@@ -1,0 +1,11 @@
+ANOTACIONES
+
+Usé genmymodel.com para probar varias herramientas
+
+MySqlWorkbench me parece mucho mejor por:
+
+con genmymodel no se pueden crear realaciones 1 a 1 por ejemplo
+las primary keys del diagrama no son creadas en sql ?
+
+vamos que no investigué muy a fondo pero el resto de proyectos los he hecho con Workbench
+e incluso pensé en repetir el pizzeria con Workbench

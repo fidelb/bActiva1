@@ -1,3 +1,5 @@
+ANOTACIONES/COMENTARIOS
+
 la tabla publicaciones podria desaparecer y los campos,
 ser campos añadidos (usuariId i data) a la tabla videos
 como tabla propia parece que se ajusta más a la 
