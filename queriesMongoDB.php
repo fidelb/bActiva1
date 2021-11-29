@@ -90,7 +90,8 @@ db.Restaurants.find({"grades.score": {$lt: 10}}, {restaurant_id:1, name:1, borou
 /*Escriu una consulta per trobar el restaurant_id, name, borough i cuisine per a aquells restaurants que preparen peix excepte 'American' i 'Chinees' o el name del restaurant comença amb lletres 'Wil'
 */
 /* NOTA: L'enunciat del que demana aquesta consulta no queda gens clar. 
-Com es pot saber si preparen peix? perqué el tipus de cuina es Seafood? Llavors que vol dir excepte 'American' i 'Chinees'? es suposa que son tipus de cuina tambe... */
+Com es pot saber si preparen peix? perqué el tipus de cuina es Seafood? Llavors que vol dir excepte 'American' i 'Chinees'? es suposa que son tipus de cuina tambe... 
+*/
 db.Restaurants.find({$or: [{cuisine: "Seafood"}, {cuisine: {$in: ["American ", "Chinese"]}}, {name: {$regex : "^Wil"}}]}, {restaurant_id:1, name:1, borough:1, cuisine:1, _id: 0}).sort({name: -1})
 
 /*Escriu una consulta per trobar el restaurant_id, name, i grades per a aquells restaurants que aconsegueixin un grau "A" i un score 11 en dades d'estudi ISODate "2014-08-11T00:00:00Z"
