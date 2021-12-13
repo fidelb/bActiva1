@@ -24,7 +24,8 @@ class Turkey {
     }
 }
 
-class TurkeyAdapter extends Turkey {
+//class TurkeyAdapter extends Turkey {
+class TurkeyAdapter {
     private $pavo;
 
     function __construct(Turkey $pavo) {
@@ -60,6 +61,7 @@ echo "The TurkeyAdapter says...<br>";
 duck_interaction($turkey_adapter);
 
 /*
+// si class TurkeyAdapter extends Turkey:
 echo "The TurkeyAdapter says...<br>";
 $turkey_adapter->gobble();
 $turkey_adapter->fly();
