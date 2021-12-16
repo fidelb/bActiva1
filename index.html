@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="lg:content-auto">
+        <!-- ... -->
+        <h1 class="text-4xl font-bold underline text-clifford">
+            Hello world!
+          </h1>
+      </div>
+  <h1 class="text-4xl font-bold underline text-green-500">
+    Hello world!
+  </h1>
+
+  <h1 class="text-3xl font-light text-center text-orange-600">Hola mundo!!</h1>
+  <p class="mt-4 text-xl italic text-center text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+  <div class="text-center mt-4">
+    <a href="#" class="bg-orange-600 text-white px-4 py-2 font-bold uppercase rounded-xl tracking-wider">Entrar</a>
+  </div>
+
+  <div class="flex flex-row">
+    <div class="max-w-md m-auto">
+        <h1 class="text-5xl text-center">My App</h1>
+        <p class="text-2xl text-center">Sign in to My App</p>
+
+        <div class="border p-5 my-5 rounded">
+          <div>
+            <label class="block mb-2">Username</label>
+            <input
+              type="text"
+              class="border rounded py-2 px-3 w-full focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="py-2">
+            <label class="block mb-2">Password</label>
+            <input
+              type="password"
+              class="border rounded py-2 px-3 w-full focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="py-2">
+            <button
+                type="button"
+                class="w-full rounded bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border-solid border-2 border-green-600">
+              Login
+            </button>
+          </div>
+        </div>
+    </div>
+    <div class="max-w-md m-auto">
+      <h1 class="text-5xl text-center">My App</h1>
+      <p class="text-2xl text-center">Sign in to My App</p>
+
+      <div class="border p-5 my-5 rounded">
+        <div>
+          <label class="block mb-2">Username</label>
+          <input
+            type="text"
+            class="border rounded py-2 px-3 w-full focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="py-2">
+          <label class="block mb-2">Password</label>
+          <input
+            type="password"
+            class="border rounded py-2 px-3 w-full focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="py-2">
+          <button
+              type="button"
+              class="w-full rounded bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border-solid border-2 border-green-600">
+            Login
+          </button>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0 sm:p-8">
+  <div class="space-y-4 bg-orange-200">
+    <div class="w-96 bg-white shadow rounded">
+        w-96
+    </div>
+    <div class="w-80 bg-white shadow rounded">
+        w-80
+    </div>
+    <div class="w-72 bg-white shadow rounded">
+        w-72
+    </div>
+    <div class="w-64 bg-white shadow rounded">
+        w-64
+    </div>
+    <div class="w-60 bg-white shadow rounded">
+        w-60
+    </div>
+    <div class="w-56 bg-white shadow rounded">
+        w-56
+    </div>
+    <div class="w-52 bg-white shadow rounded">
+        w-52
+    </div>
+    <div class="w-48 bg-white shadow rounded">
+        w-48
+    </div>
+  </div>
+  <div class="space-y-4 bg-green-200">
+    <div class="w-96 bg-white shadow rounded">
+        w-96
+    </div>
+    <div class="w-80 bg-white shadow rounded">
+        w-80
+    </div>
+    <div class="w-72 bg-white shadow rounded">
+        w-72
+    </div>
+    <div class="w-64 bg-white shadow rounded">
+        w-64
+    </div>
+    <div class="w-60 bg-white shadow rounded">
+        w-60
+    </div>
+    <div class="w-56 bg-white shadow rounded">
+        w-56
+    </div>
+    <div class="w-52 bg-white shadow rounded">
+        w-52
+    </div>
+    <div class="w-48 bg-white shadow rounded">
+        w-48
+    </div>
+  </div>
+</figure>
+<figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-8">
+  
+</figure>
+</body>
+</html>
